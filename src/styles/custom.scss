@@ -1,0 +1,50 @@
+$primary: #2ecc71;
+$white: #eef5fb;
+
+@import "bootstrap/scss/bootstrap";
+
+// Under import to override bootstrap
+
+.custom-navbar {
+	width: 100%;
+	min-height: 100px;
+	background-color: #19214a;
+
+	.nav-link {
+		color: #eef5fb;
+		font-size: large;
+		&.active {
+			color: #eef5fb;
+			font-size: large;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.custom-navbar .navbar-nav {
+	align-self: flex-end;
+}
+
+.cream-bg {
+	background-color: #fff8e7;
+}
+.cream-dark-bg {
+	background-color: #efc86d;
+}
+
+.blue-color {
+	color: #384f96;
+}
+
+.blue-dark-bg {
+	background-color: rgba(63, 79, 112, 0.92);
+}
+.blue-bg {
+	background-color: rgba(27, 48, 110, 0.868);
+}
+
+.form-wid-height {
+	max-width: 300px;
+	max-height: 170px;
+}
