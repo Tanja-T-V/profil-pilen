@@ -4,3 +4,4 @@ dist-ssr
 .DS_Store
 node_modules
 package-lock.json
+components.d.ts
