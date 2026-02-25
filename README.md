@@ -1,5 +1,7 @@
 # A Vue.js template for Vite
 
+School project for learning Vite and Vue
+
 Logo:
 Made by myself, Tanja
 
