@@ -42,6 +42,15 @@ export default {
 		createMapLocation() {
 			// Makes sure it dont load two maps. If map exist/true then ddont do annything.
 			if (this.map) return;
+
+			// Deletes marker form node-_modules and deines them from images.
+			delete L.Icon.Default.prototype._getIconUrl;
+			L.Icon.Default.mergeOptions({
+				iconRetinaUrl: "./public/marker-icon-2x.png",
+				iconUrl: "./public/marker-icon.png",
+				shadowUrl: "./public/marker-shadow.png",
+			});
+
 			//Map Settings. First sets map [lat, long], Zoom level. Lower number - less zoom.
 			this.map = L.map("map").setView(
 				[this.profileMap.profileLati, this.profileMap.profileLong],
