@@ -10,4 +10,5 @@ export default defineConfig({
 			resolvers: [BootstrapVueNextResolver()],
 		}),
 	],
+	base: "/profil-pilen/",
 });
