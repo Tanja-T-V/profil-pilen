@@ -8,6 +8,9 @@ import { nextTick } from "vue";
 
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 export default {
 	mounted() {
@@ -46,9 +49,9 @@ export default {
 			// Deletes marker form node-_modules and deines them from images.
 			delete L.Icon.Default.prototype._getIconUrl;
 			L.Icon.Default.mergeOptions({
-				iconRetinaUrl: "./public/marker-icon-2x.png",
-				iconUrl: "./public/marker-icon.png",
-				shadowUrl: "./public/marker-shadow.png",
+				iconRetinaUrl: markerIcon2x,
+				iconUrl: markerIcon,
+				shadowUrl: markerShadow,
 			});
 
 			//Map Settings. First sets map [lat, long], Zoom level. Lower number - less zoom.

@@ -9,11 +9,13 @@ export default {
 </script>
 
 <template>
-	<HeaderBar />
+	<div class="d-flex flex-column min-vh-100">
+		<HeaderBar />
 
-	<main>
-		<RouterView />
-	</main>
+		<main class="flex-fill">
+			<RouterView />
+		</main>
 
-	<footer></footer>
+		<footer></footer>
+	</div>
 </template>
